@@ -1,0 +1,240 @@
+All functions matching regular expression "printf":
+
+File ../stdio-common/printf_fphex.c:
+396:	void __printf_buffer_flush_fphex_to_wide(struct __printf_buffer_fphex_to_wide *);
+373:	void __printf_fphex_l_buffer(struct __printf_buffer *, locale_t, const struct printf_info *, const void * const *);
+415:	void __wprintf_fphex_l_buffer(struct __wprintf_buffer *, locale_t, const struct printf_info *, const void * const *);
+48:	static void __printf_fphex_buffer(struct __printf_buffer *, const char *, const struct printf_info *, const void * const *);
+
+File ./argp/argp-fmtstream.c:
+400:	ssize_t __argp_fmtstream_printf(struct argp_fmtstream *, const char *, ...);
+
+File ./debug/asprintf_chk.c:
+25:	int ___asprintf_chk(char **, int, const char *, ...);
+
+File ./debug/dprintf_chk.c:
+24:	int __dprintf_chk(int, int, const char *, ...);
+
+File ./debug/fprintf_chk.c:
+24:	int ___fprintf_chk(FILE *, int, const char *, ...);
+
+File ./debug/fwprintf_chk.c:
+24:	int __fwprintf_chk(FILE *, int, const wchar_t *, ...);
+
+File ./debug/obprintf_chk.c:
+24:	int __obstack_printf_chk(struct obstack *, int, const char *, ...);
+
+File ./debug/printf_chk.c:
+24:	int ___printf_chk(int, const char *, ...);
+
+File ./debug/snprintf_chk.c:
+25:	int ___snprintf_chk(char *, size_t, int, size_t, const char *, ...);
+
+File ./debug/sprintf_chk.c:
+24:	int ___sprintf_chk(char *, int, size_t, const char *, ...);
+
+File ./debug/swprintf_chk.c:
+25:	int __swprintf_chk(wchar_t *, size_t, int, size_t, const wchar_t *, ...);
+
+File ./debug/vasprintf_chk.c:
+30:	int __vasprintf_chk(char **, int, const char *, struct __va_list_tag *);
+
+File ./debug/vdprintf_chk.c:
+30:	int __vdprintf_chk(int, int, const char *, struct __va_list_tag *);
+
+File ./debug/vfprintf_chk.c:
+23:	int ___vfprintf_chk(FILE *, int, const char *, struct __va_list_tag *);
+
+File ./debug/vfwprintf_chk.c:
+23:	int __vfwprintf_chk(FILE *, int, const wchar_t *, struct __va_list_tag *);
+
+File ./debug/vobprintf_chk.c:
+23:	int __obstack_vprintf_chk(struct obstack *, int, const char *, struct __va_list_tag *);
+
+File ./debug/vprintf_chk.c:
+23:	int ___vprintf_chk(int, const char *, struct __va_list_tag *);
+
+File ./debug/vsnprintf_chk.c:
+24:	int ___vsnprintf_chk(char *, size_t, int, size_t, const char *, struct __va_list_tag *);
+
+File ./debug/vsprintf_chk.c:
+21:	int ___vsprintf_chk(char *, int, size_t, const char *, struct __va_list_tag *);
+
+File ./debug/vswprintf_chk.c:
+24:	int __vswprintf_chk(wchar_t *, size_t, int, size_t, const wchar_t *, struct __va_list_tag *);
+
+File ./debug/vwprintf_chk.c:
+23:	int __vwprintf_chk(int, const wchar_t *, struct __va_list_tag *);
+
+File ./debug/wprintf_chk.c:
+24:	int __wprintf_chk(int, const wchar_t *, ...);
+
+File ./elf/dl-printf.c:
+304:	void __GI__dl_fatal_printf(const char *, ...);
+250:	void _dl_debug_printf(const char *, ...);
+262:	void _dl_debug_printf_c(const char *, ...);
+274:	void _dl_dprintf(int, const char *, ...);
+294:	void _dl_error_printf(const char *, ...);
+284:	void _dl_printf(const char *, ...);
+49:	static void _dl_debug_vdprintf(int, int, const char *, struct __va_list_tag *);
+
+File ./libio/fwprintf.c:
+27:	int __fwprintf(FILE *, const wchar_t *, ...);
+
+File ./libio/iovdprintf.c:
+43:	void __printf_buffer_flush_dprintf(struct __printf_buffer_dprintf *);
+77:	int __vdprintf(int, const char *, struct __va_list_tag *);
+62:	int __vdprintf_internal(int, const char *, struct __va_list_tag *, unsigned int);
+
+File ./libio/iovsprintf.c:
+74:	int __vsprintf(char *, const char *, struct __va_list_tag *);
+34:	int __vsprintf_internal(char *, size_t, const char *, struct __va_list_tag *, unsigned int);
+
+File ./libio/obprintf.c:
+115:	int __obstack_printf(struct obstack *, const char *, ...);
+108:	int __obstack_vprintf(struct obstack *, const char *, struct __va_list_tag *);
+64:	int __obstack_vprintf_internal(struct obstack *, const char *, struct __va_list_tag *, unsigned int);
+37:	void __printf_buffer_flush_obstack(struct __printf_buffer_obstack *);
+
+File ./libio/swprintf.c:
+25:	int __swprintf(wchar_t *, size_t, const wchar_t *, ...);
+
+File ./libio/vasprintf.c:
+50:	void __printf_buffer_flush_asprintf(struct __printf_buffer_asprintf *);
+139:	int __vasprintf(char **, const char *, struct __va_list_tag *);
+95:	int __vasprintf_internal(char **, const char *, struct __va_list_tag *, unsigned int);
+
+File ./libio/vsnprintf.c:
+101:	int ___vsnprintf(char *, size_t, const char *, struct __va_list_tag *);
+34:	void __printf_buffer_flush_snprintf(struct __printf_buffer_snprintf *);
+70:	int __printf_buffer_snprintf_done(struct __printf_buffer_snprintf *);
+58:	void __printf_buffer_snprintf_init(struct __printf_buffer_snprintf *, char *, size_t);
+91:	int __vsnprintf_internal(char *, size_t, const char *, struct __va_list_tag *, unsigned int);
+
+File ./libio/vswprintf.c:
+61:	int __vswprintf(wchar_t *, size_t, const wchar_t *, struct __va_list_tag *);
+33:	int __vswprintf_internal(wchar_t *, size_t, const wchar_t *, struct __va_list_tag *, unsigned int);
+
+File ./libio/vwprintf.c:
+26:	int __vwprintf(const wchar_t *, struct __va_list_tag *);
+
+File ./libio/wprintf.c:
+26:	int __wprintf(const wchar_t *, ...);
+
+File ./stdio-common/Xprintf_buffer_done.c:
+24:	int __printf_buffer_done(struct __printf_buffer *);
+24:	int __wprintf_buffer_done(struct __wprintf_buffer *);
+
+File ./stdio-common/Xprintf_buffer_flush.c:
+60:	_Bool __printf_buffer_flush(struct __printf_buffer *);
+60:	_Bool __wprintf_buffer_flush(struct __wprintf_buffer *);
+
+File ./stdio-common/Xprintf_buffer_pad_1.c:
+23:	void __printf_buffer_pad_1(struct __printf_buffer *, char, size_t);
+23:	void __wprintf_buffer_pad_1(struct __wprintf_buffer *, wchar_t, size_t);
+
+File ./stdio-common/Xprintf_buffer_putc_1.c:
+22:	void __printf_buffer_putc_1(struct __printf_buffer *, char);
+22:	void __wprintf_buffer_putc_1(struct __wprintf_buffer *, wchar_t);
+
+File ./stdio-common/Xprintf_buffer_puts_1.c:
+23:	void __printf_buffer_puts_1(struct __printf_buffer *, const char *);
+23:	void __wprintf_buffer_puts_1(struct __wprintf_buffer *, const wchar_t *);
+
+File ./stdio-common/Xprintf_buffer_write.c:
+25:	void __printf_buffer_write(struct __printf_buffer *, const char *, size_t);
+25:	void __wprintf_buffer_write(struct __wprintf_buffer *, const wchar_t *, size_t);
+
+File ./stdio-common/Xprintf_function_invoke.c:
+22:	int __printf_function_invoke(void *, printf_function *, union printf_arg *, size_t, struct printf_info *);
+22:	int __wprintf_function_invoke(void *, printf_function *, union printf_arg *, size_t, struct printf_info *);
+
+File ./stdio-common/asprintf.c:
+25:	int ___asprintf(char **, const char *, ...);
+
+File ./stdio-common/dprintf.c:
+24:	int __GI___dprintf(int, const char *, ...);
+
+File ./stdio-common/fprintf.c:
+26:	int __fprintf(FILE *, const char *, ...);
+
+File ./stdio-common/fxprintf.c:
+75:	int __fxprintf(FILE *, const char *, ...);
+85:	int __fxprintf_nocancel(FILE *, const char *, ...);
+63:	int __vfxprintf(FILE *, const char *, struct __va_list_tag *, unsigned int);
+27:	static int locked_vfxprintf(FILE *, const char *, struct __va_list_tag *, unsigned int);
+
+File ./stdio-common/printf-prs.c:
+60:	size_t parse_printf_format(const char *, size_t, int *);
+
+File ./stdio-common/printf.c:
+27:	int __printf(const char *, ...);
+
+File ./stdio-common/printf_buffer_as_file.c:
+97:	void __printf_buffer_as_file_init(struct __printf_buffer_as_file *, struct __printf_buffer *);
+52:	int __printf_buffer_as_file_overflow(FILE *, int);
+115:	_Bool __printf_buffer_as_file_terminate(struct __printf_buffer_as_file *);
+76:	size_t __printf_buffer_as_file_xsputn(FILE *, const void *, size_t);
+
+File ./stdio-common/printf_buffer_to_file.c:
+48:	void __printf_buffer_flush_to_file(struct __printf_buffer_to_file *);
+116:	int __printf_buffer_to_file_done(struct __printf_buffer_to_file *);
+107:	void __printf_buffer_to_file_init(struct __printf_buffer_to_file *, FILE *);
+28:	void __printf_buffer_to_file_switch(struct __printf_buffer_to_file *);
+
+File ./stdio-common/printf_fp.c:
+1236:	int ___printf_fp(FILE *, const struct printf_info *, const void * const *);
+1055:	void __printf_buffer_flush_fp(struct __printf_buffer_fp *);
+1166:	void __printf_buffer_flush_fp_to_wide(struct __printf_buffer_fp_to_wide *);
+1096:	void __printf_fp_l_buffer(struct __printf_buffer *, locale_t, const struct printf_info *, const void * const *);
+1195:	void __wprintf_fp_l_buffer(struct __wprintf_buffer *, locale_t, const struct printf_info *, const void * const *);
+138:	static void __printf_fp_buffer_1(struct __printf_buffer *, locale_t, char, char, const struct printf_info *, const void * const *, unsigned int);
+
+File ./stdio-common/printf_size.c:
+80:	int __printf_size(FILE *, const struct printf_info *, const void * const *);
+221:	int printf_size_info(const struct printf_info *, size_t, int *);
+
+File ./stdio-common/reg-modifier.c:
+187:	void __libc_printf_freemem(void);
+42:	int __register_printf_modifier(const wchar_t *);
+
+File ./stdio-common/reg-printf.c:
+35:	int __GI___register_printf_specifier(int, printf_function *, printf_arginfo_size_function *);
+75:	int __register_printf_function(int, printf_function *, printf_arginfo_function *);
+
+File ./stdio-common/reg-type.c:
+35:	int __register_printf_type(printf_va_arg_function *);
+
+File ./stdio-common/snprintf.c:
+25:	int __GI___snprintf(char *, size_t, const char *, ...);
+
+File ./stdio-common/sprintf.c:
+24:	int __sprintf(char *, const char *, ...);
+
+File ./stdio-common/vfprintf-internal.c:
+598:	void __printf_buffer(struct __printf_buffer *, const char *, struct __va_list_tag *, unsigned int);
+1521:	int __vfprintf_internal(FILE *, const char *, struct __va_list_tag *, unsigned int);
+1521:	int __vfwprintf_internal(FILE *, const wchar_t *, struct __va_list_tag *, unsigned int);
+598:	void __wprintf_buffer(struct __wprintf_buffer *, const wchar_t *, struct __va_list_tag *, unsigned int);
+1047:	static void printf_positional(struct __wprintf_buffer *, const wchar_t *, int, struct __va_list_tag *, va_list *, int, const unsigned int *, wchar_t *, int, const char *, THOUSANDS_SEP_T, unsigned int);
+
+File ./stdio-common/vfprintf.c:
+21:	int __vfprintf(FILE *, const char *, struct __va_list_tag *);
+
+File ./stdio-common/vfwprintf.c:
+21:	int __vfwprintf(FILE *, const wchar_t *, struct __va_list_tag *);
+
+File ./stdio-common/vprintf.c:
+28:	int __vprintf(const char *, struct __va_list_tag *);
+
+File ./stdio-common/wprintf_buffer_as_file.c:
+101:	void __wprintf_buffer_as_file_init(struct __wprintf_buffer_as_file *, struct __wprintf_buffer *);
+52:	wint_t __wprintf_buffer_as_file_overflow(FILE *, int);
+120:	_Bool __wprintf_buffer_as_file_terminate(struct __wprintf_buffer_as_file *);
+79:	size_t __wprintf_buffer_as_file_xsputn(FILE *, const void *, size_t);
+
+File ./stdio-common/wprintf_buffer_to_file.c:
+28:	void __wprintf_buffer_flush_to_file(struct __wprintf_buffer_to_file *);
+49:	int __wprintf_buffer_to_file_done(struct __wprintf_buffer_to_file *);
+41:	void __wprintf_buffer_to_file_init(struct __wprintf_buffer_to_file *, FILE *);
+
