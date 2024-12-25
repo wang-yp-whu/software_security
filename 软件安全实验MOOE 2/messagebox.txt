@@ -1,0 +1,12 @@
+messageboxA: FOA = ADB25h, 求RVA
+导出表RVA：A8090h, FOA = 0XA8090 
+MBA: RVA = ADB25h, "25 DB 0A 00" -> RVA(FOA) = A9F1Ch
+AddressOfNames: RVA = A950Ch, .rdata FOA = 0xA950C 
+X = (A9F1C - A950C) / 4 = 284
+struct IMAGE_EXPORT_BY_NAME ExportByName[644]
+AddressOfNameOrdinals	RVA = AA4F4h	.rdata FOA = 0xAA4F4 
+y = x * 2 + AA4F4 = AA9FC -> 02 89
+AddressOfFunctions	A80B8h	.rdata FOA = 0xA80B8 
+PFILE = A80B8 + Y * 4
+	  = A80B8 + 289 * 4 = A8ADC -> 00 07 A3 70
+usee_32加载的基地址为 76B9B1D0 - 0007A370 = 76B20E60
